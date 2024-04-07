@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Res-Q-Bot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            animation: slideInDown 1s ease;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0; /* Stick navbar at the top */
+            z-index: 1000; /* Ensure navbar stays on top of other content */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+            animation: slideInLeft 1s ease;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ff0;
+        }
+
+        /* Video section */
+        .video-section {
+            position: relative;
+            height: 300px; /* Adjust height as needed */
+            overflow: hidden;
+        }
+        .video-section video {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+        .video-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            animation: textAnimation 3s infinite alternate;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+        main section {
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            padding: 20px;
+            background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+            transition: transform 0.3s ease;
+        }
+        main section:hover {
+            transform: translateY(-5px);
+        }
+        main section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        main section p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+        main section ul {
+            padding-left: 20px;
+            color: #555;
+        }
+        main section li {
+            opacity: 0;
+            animation: fadeInUp 1s ease forwards;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Keyframe animations */
+        @keyframes slideInDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes textAnimation {
+            0% {
+                color: #fff;
+            }
+            50% {
+                color: #ff0;
+            }
+            100% {
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1><i class="fas fa-fire-alt"></i> Res-Q-Bot <i class="fas fa-fire-alt"></i></h1>
+        <!-- Add any header content or logo here -->
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-bolt"></i> Predictions</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <video autoplay muted loop>
+            <source src="bcg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-text">
+            <span>You are protected under</span><br>
+            <span style="font-family: 'Pacifico', cursive;">Disaster Dormito</span>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2><i class="fas fa-exclamation-triangle"></i> Predicted Major Disasters</h2>
+            <p>Here are some of the major disasters predicted to happen in the future:</p>
+            <ul>
+                <li><i class="fas fa-globe"></i> Earthquake in the Pacific Ring of Fire region</li>
+                <li><i class="fas fa-wind"></i> Hurricane in the Atlantic Ocean</li>
+                <li><i class="fas fa-wave-square"></i> Tsunami in the Indian Ocean</li>
+                <!-- Add more predicted disasters -->
+            </ul>
+        </section>
+
+        <!-- Weather and AQI -->
+        <section>
+            <h2><i class="fas fa-sun"></i> Weather Information</h2>
+            <p>Weather: Sunny</p>
+            <p>Temperature: 25°C</p>
+            <!-- Add more weather information as needed -->
+        </section>
+
+        <section>
+            <h2><i class="fas fa-wind"></i> Air Quality Index (AQI)</h2>
+            <p>AQI: 50 (Good)</p>
+            <!-- Add more AQI information as needed -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Future Disasters Prediction. All rights reserved.</p>
+    </footer>
+</body>
+</html>
